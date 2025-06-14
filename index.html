@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link  href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Resume site</title>
 </head>
 <body>
-    <header>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <header class="container"> 
+        <img src="/images/profile.jpeg" alt="Profile Picture" class="profile-pic">
         <div class="bio">
             <h1>Ayabonga Mtsotso</h1>
-            <p>I'm a passionate Salesforce Admin with a drive to continually learn and grow. Currently, I'm upskilling to transition into a Salesforce Developer role, with the long-term goal of becoming a Solution Architect. I’m excited about leveraging my admin experience while deepening my knowledge of Salesforce development to create scalable, effective solutions. I’m always exploring new ways to enhance user experiences and solve complex business challenges using Salesforce.</p>
+            <p>I am a passionate Salesforce Admin transitioning into a Developer role, aiming to become a Solution Architect. I blend admin expertise with HTML, CSS, JavaScript, and growing develoment skills to build scalable solutions and improve user experiences.</p>
         </div>
     </header>
 
     <main>  
 <section id="proficiency">      
         <h1>Proficiency</h1>
-        <h2>Beginner </h2>
-        <h2>Intermediate</h2>
-        <h2>Advanced</h2>
+        <span>Beginner</span>
+        <span>Intermediate</span>
+        <span>Advanced</span>
         <ul>
             <li>JavaScript</li>
             <li>Node.js</li>
@@ -48,48 +49,61 @@
         <div class="project">
             <h2>2024</h2>
             <h3>Project Title</h3>
-            <p>Brief....</p>
+            <strong>Brief</strong>
             <br>
-            <p>Technologies....</p>
+            <strong>Technologies:</strong>
             <br>
-            <p>Responsibilities....</p>
+            <strong>Responsibilities:</strong>
         </div>
-        <div class="project">
+        <div class="project-card">
+            <h2>2025</h2>
+            <strong>Project Title</strong>
+            <strong>Brief....</strong>
+            <br>
+            <strong>Technologies....</strong>
+            <br>
+            <strong>Responsibilities....</strong>
+        <div class="project-card">
             <h2>2025</h2>
             <h3>Project Title</h3>
-            <p>Brief....</p>
+            <strong>Brief....</strong>
             <br>
-            <p>Technologies....</p>
+            <strong>Technologies....</strong>
             <br>
-            <p>Responsibilities....</p>
-        <div class="project">
-            <h2>2025</h2>
-            <h3>Project Title</h3>
-            <p>Brief....</p>
-            <br>
-            <p>Technologies....</p>
-            <br>
-            <p>Responsibilities....</p>  
+            <strong>Responsibilities....</strong>  
         </div>
-        <div class="project">
+        <div class="project-card">
             <h2>2026</h2>
             <h3>Project Title</h3>
-            <p>Brief....</p>
+            <strong>Brief....</strong>
             <br>
-            <p>Technologies....</p>
+            <strong>Technologies....</strong>
             <br>
-            <p>Responsibilities....</p>
+            <strong>Responsibilities....</strong>
         </div>
 <section id="education">
         <h1>Education</h1>
         <div class="edu-level">
-            <h2>school</h2>
-            <p> course</p>
-            <p>Dates</p>
+            <time datetime="2025-03">Mar 2025</time> - <time datetime="2026-03">Mar 2026</time>
+            <h3>CodeSpace Academy</h3>
+            <p>Software Development</p>
+            <p> Part-time</p>
+
+            
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Focused on</li>
+                <li>Collaborated</li>
+                <li>Gained hands-on experience</li>
+            </ul>
+        </div>
+        <div class="edu-level">
+            <time datetime="2015-01">Mar 2025</time> - <time datetime="2020-01">Mar 2026</time>
+            <h3>UCT</h3>
+            <p>B.Sc Honours in Geology</p>
+            <ul>
+                <li>Focused on</li>
+                <li>Collaborated</li>
+                <li>Gained hands-on experience</li>
             </ul>
         </div>
         <div class="edu-level">
@@ -97,19 +111,9 @@
             <p> course</p>
             <p>Dates</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="edu-level">
-            <h2>school</h2>
-            <p> course</p>
-            <p>Dates</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Focused on</li>
+                <li>Collaborated</li>
+                <li>Gained hands-on experience</li>
             </ul>
         </div>
     </section>
@@ -117,37 +121,37 @@
     <section id="tools"> 
         <!-- ICONS FROM Icons8, Font Awesome, or Devicon -->
         <h1>Tools</h1>   
-        <div class="languages">   
+        <div class="tool-type">   
             
 
         </div>
-        <div class="design">   
+        <div class="tool-type">   
 
         </div>
-        <div class="tool">   
+        <div class="tool-type">   
 
         </div>
     </section>
     <section id="experience">
         <h1>Experience</h1>
         <div class="job">
-            <h2></h2>
+            <h2>Title</h2>
+            <time datetime="2015-01">Mar 2025</time> - <time datetime="2020-01">Mar 2026</time>
             <p>Company </p>
-            <p>Dates</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Handled</li>
+                <li>Advised</li>
+                <li>Collaborated</li>
             </ul>
         </div>
         <div class="job">
-            <h2></h2>
-            <p>Company Name, Location</p>
-            <p>Dates/p>
+            <h2>Title</h2>
+            <time datetime="2015-01">Mar 2025</time> - <time datetime="2020-01">Mar 2026</time>
+            <p>Company </p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Handled</li>
+                <li>Advised</li>
+                <li>Collaborated</li>
             </ul>
         </div>
     </section>
