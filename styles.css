@@ -71,16 +71,63 @@ body {/*not required*/
   padding: 20px;
 }
 #skills li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
+  font-size: 14px;
+  font-weight: medium;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 2px;
   padding: 8px 14px;
-  border-radius: 30px;
+  border-radius: 30px; /*should be 6px round corners*/
   background-color: #ECF4F1;
   margin: 4px;
   gap: 8px;
 }
+/* project section */
+#projects {  
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;}
+
+#projects h1 {
+font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+.project-card {
+  width: 240px;
+  height: 360px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+}
+.project-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.project-card strong {
+  font-weight: regular;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 18px;
+}
+.project-card:hover {
+  color: #FFFFFF;
+  background-color: #2E6E5B;
+}
+.project-card:hover strong {
+  color: #FFFFFF;
+}
+
+
 
 
 
@@ -122,6 +169,15 @@ body {/*not required*/
    .bio h1 {
     font-size: 18px;
    }
-
-  
+  #proficiency, #skills {
+    width: 100%;
+    margin-top: 20px;
+  }
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* need to fix*/
+    gap: 16px;
+    width: 100%;
+    padding: 16px;
+  }
 }
