@@ -7,6 +7,7 @@ body {/*not required*/
   color: #333333;
 }
 
+/*Bio Section*/
 .profile-pic {
   width: 144px;
   height: 144px;
@@ -41,9 +42,71 @@ body {/*not required*/
   text-align: center;
 }
 
+/*proficiency section*/
+#proficiency {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+}
+.level {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  gap: 12px;
+}
+
+/* skills section */
+#skills {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+}
+#skills ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+#skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background-color: #ECF4F1;
+  margin: 4px;
+  gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive design */
 
-/*mobile view*/
+/* mobile view*/
 @media (max-width: 640px) {
 .container {
     flex-direction: column;
