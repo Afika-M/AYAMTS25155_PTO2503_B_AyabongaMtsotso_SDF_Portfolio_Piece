@@ -112,7 +112,7 @@ font-weight: bold;
   height: 360px;
   border-radius: 12px;
   box-shadow: 0 0 2px #DADADA;
-  background-color: #FFFFFF;
+  background-color: #ECF4F1;
   color: #000000;
   font-size: 14px;
 }
@@ -141,10 +141,16 @@ font-weight: bold;
   color: #FFFFFF;
 }
 .liked {
-  color: #f16a2c;
+  height: 16px;
+  width: 16px;
+  color: #D9534F;
 }
 .unliked{
-  color: #dd9a7c;
+  height: 16px;
+  width: 16px;
+  padding: 8px;
+  padding: 8px;
+  color: #CCCCCC;
 }
 /* Tools section */
 #tools {
@@ -152,15 +158,20 @@ font-weight: bold;
   background-color: #FFFFFF;
   border-radius: 12px;
   box-shadow: 0 0 2px #DADADA;
-  margin-bottom: 12px;
+  margin: 12px;
   flex:1;
 }
-.tool-type ul{
+.tool-type ul {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
   flex-wrap: wrap;
   padding: 20px;
+  background-color: #ECF4F1;
+  border-radius: 12px;
+  font-size: 20px;
 }
 
 .edutools-wrapper {
@@ -169,8 +180,60 @@ font-weight: bold;
   flex-wrap: wrap;
 }
 
-#education{
-   flex: 3;
+#education {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+  margin-bottom: 12px;
+  flex: 3;
+}
+.education-card {
+  width: 540px;
+  height: 160px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  align-items: start; 
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #ECF4F1;
+}
+
+
+.education-card time, 
+.education-card h3, 
+.education-card p {
+  grid-column: 1;
+}
+
+#experience {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #DADADA;
+  margin-bottom: 12px;
+}
+
+#contacts {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color:#f16a2c;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contacts a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#contacts a:hover {
+  text-decoration: underline;
 }
 
 
