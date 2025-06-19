@@ -45,7 +45,9 @@ body {/*not required*/
   gap: 20px; 
 }
 
-/*proficiency section*/
+/* ======================
+   Proficiency Section
+   ====================== */
 #proficiency {
   padding: 20px;
   background-color: #FFFFFF;
@@ -53,43 +55,67 @@ body {/*not required*/
   box-shadow: 0 0 2px #DADADA;
   margin-bottom: 12px;
 }
+
+#proficiency h1 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 16px;
+  color: #000000;
+}
+
+/* Level Indicators */
 .level {
-  display: inline-flex;
-  align-items: center;
-  justify-content: end;
+  display: inline-block;
+  align-self: end;
+  gap: 12px;
   font-weight: bold;
   font-size: 14px;
-  text-align: left;
   color: #000000;
-  gap: 12px;
 }
-#proficiency h1 {
- font-size: 22px;
- padding-bottom: 16px;
- color: #000;
- text-align: left; 
-}
+
+/* Skills List */
 #proficiency ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
+
 #proficiency li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 0;
 }
+
+/* Progress Bars */
 .bar {
-  width: 100%;
-  height: 8px;
-  background-color: #2E6E5B;
+  width: 80%;
+  height: 10px;
+  background-color: #ECF4F1;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
 }
 
+.fill {
+  height: 100%;
+  background-color: #2E6E5B;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-/* skills section */
+/* Individual Skill Levels */
+#react-fill { width: 20%; }
+#html-fill { width: 70%; }
+#node-fill { width: 50%; }
+#js-fill { width: 60%; }
+
+
+/* ======================
+   Skills Section
+   ====================== */
 #skills {
   padding: 20px;
   background-color: #FFFFFF;
@@ -223,18 +249,20 @@ font-weight: bold;
   border-radius: 12px;
   box-shadow: 0 0 2px #DADADA;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; 
-  align-items: start; 
+  grid-template-columns: 1fr 1fr; /* Split into 2 columns */
+  gap: 20px; /* Space between columns */
+  align-items: start; /* Align content to the top */
   padding: 16px;
   margin-bottom: 16px;
   border-radius: 8px;
   background-color: #ECF4F1;
 }
+
+/* Left Column: Years, University, Degree */
 .education-card time, 
 .education-card h3, 
 .education-card p {
-  grid-column: 1; /
+  grid-column: 1; /* Place in first column */
 }
 
 #experience {
