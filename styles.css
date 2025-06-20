@@ -14,9 +14,12 @@ body {/*not required*/
    ====================== */
 .profile-pic {
   width: 9rem;
-  height: 9rem;
-  border-radius: 1.5rem;
   object-fit: cover;
+  flex-shrink: 0;
+  flex: 1;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.188rem #DADADA;
+  margin-bottom: 1.25rem;
 }
 
 .bio h1{
@@ -38,6 +41,7 @@ body {/*not required*/
   border-radius: 0.75rem;
   box-shadow: 0 0 0.188rem #DADADA;
   margin-bottom: 1.25rem;
+  flex: 3;
   }
 
 .container {
@@ -169,25 +173,25 @@ body {/*not required*/
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1.2fr));
   gap: 1rem;
 }
 
 #projects h1 {
-  font-size: 1rem;
   text-align: center;
+  font-size: 1.375rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
   color: #000000;
 }
 .project-card {
-  width: 80%;
-  padding: 1rem;
-  height: 22.5rem;
-  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
   box-shadow: 0 0 0.125rem #DADADA;
   background-color: #ECF4F1;
   color: #000000;
-  font-size: 0.875rem;
-  margin: 1.875rem auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 .project-card h3 {
   font-size: 1rem;
@@ -197,12 +201,14 @@ body {/*not required*/
 .project-card h2 {
   display: flex;
   justify-content: space-between; 
-  align-items: flex-start;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 .project-card strong {
-  font-size: 0.875rem;
+  display: block;
+  font-weight: 600;
+  margin-top: 0.75rem;
   color: #4A4A4A;
-  line-height: 1.125rem;
 }
 
 .project-card:hover, .fa-heart:hover {
@@ -213,15 +219,13 @@ body {/*not required*/
 .project-card:hover strong {
   color: #FFFFFF;
 }
+.fa-heart {
+  font-size: 1rem;
+}
 .liked {
-  height: 16px;
-  width: 16px;
   color: #D9534F;
 }
 .unliked{
-  height: 1rem;
-  width: 1rem;
-  padding: 0.5rem;
   color: #eea989;
 }
 /* ======================
@@ -398,15 +402,36 @@ body {/*not required*/
    Responsive Design
    ====================== */
 
-@media (max-width: 768px) {
+@media (max-width:480px){
+.project-card {
+    width: 95%;
+    height: auto;
+    margin: 0.625rem auto;
+  }
+  .tool-type{
+    padding: 2rem 0.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
   }
 
-  .profile-pic {
-    width: 8rem;
-    height: 8rem;
+  .bio h1 {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+
   }
 
   .bio h1 {
