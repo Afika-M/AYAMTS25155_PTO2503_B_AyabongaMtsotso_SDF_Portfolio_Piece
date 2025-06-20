@@ -1,7 +1,13 @@
 /* ======================
    basic styles
    ====================== */
-body {/*not required*/
+  
+  * {
+  box-sizing: border-box;
+  }
+
+
+body {
   font-family: 'inter', sans-serif;
   margin: 1rem;
   padding: 1rem;
@@ -15,10 +21,8 @@ body {/*not required*/
 .profile-pic {
   width: 9rem;
   object-fit: cover;
-  flex-shrink: 0;
   flex: 1;
   border-radius: 0.75rem;
-  box-shadow: 0 0 0.188rem #DADADA;
   margin-bottom: 1.25rem;
 }
 
@@ -47,6 +51,7 @@ body {/*not required*/
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 0.625rem;
 }
 
@@ -64,7 +69,6 @@ body {/*not required*/
 
 #proficiency h1 {
   font-size: 1.375rem;
-  font-weight: bold;
   padding-bottom: 1rem;
   color: #000000;
 }
@@ -132,7 +136,6 @@ body {/*not required*/
 }
 #skills h1 {
   font-size: 1.375rem;
-  font-weight: bold;
   padding-bottom: 1rem;
   color: #000000;
 }
@@ -180,7 +183,6 @@ body {/*not required*/
 #projects h1 {
   text-align: center;
   font-size: 1.375rem;
-  font-weight: bold;
   padding-bottom: 1rem;
   color: #000000;
 }
@@ -257,6 +259,7 @@ body {/*not required*/
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  align-items: flex-start;
 }
 
 .school {
@@ -273,12 +276,23 @@ body {/*not required*/
   padding-left: 1rem;
   line-height: 1.6;
 }
+.badge{
+  color: #FFFFFF;
+  background-color: #f16321;
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  justify-self: end;
+}
+.education-card:hover, .school:hover, .course-title:hover{
+  color: #FFFFFF;
+  background-color: #2E6E5B;
+}
 
 /* ======================
    Tools Section
    ====================== */
 #tools {
-  padding: 20px;
   background-color: #FFFFFF;
   border-radius: 0.75rem;
   box-shadow: 0 0 0.125rem #DADADA;
@@ -288,15 +302,25 @@ body {/*not required*/
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  background-color: #FFFFFF;
   flex: 1;
 }
-
+.tools-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#tools h1 {
+  font-size: 1.375rem;
+  color: #000000;
+  text-align: center;
+}
 .tool-type {
   background: #eaf5f2;
   border-radius: 1.25rem;
-  padding: 3rem 1rem;
-   width: 80%;
+  padding: 3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
   max-width: 18rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -373,6 +397,10 @@ body {/*not required*/
   padding-left: 1rem;
   line-height: 1.6;
 }
+.job:hover, .badge:hover {
+  color: #FFFFFF;
+  background-color: #2E6E5B;
+}
 
 /* ======================
    Footer Section
@@ -402,60 +430,95 @@ body {/*not required*/
    Responsive Design
    ====================== */
 
-@media (max-width:480px){
-.project-card {
-    width: 95%;
-    height: auto;
-    margin: 0.625rem auto;
-  }
-  .tool-type{
-    padding: 2rem 0.5rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bio h1 {
-    font-size: 1.25rem;
-  }
-}
-
-
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-
-  }
-
-  .bio h1 {
-    font-size: 1.25rem;
-  }
-
+  /* Project Grid: 2 cards per row */
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
-  .education-card, .job {
+  /* Bio Styling */
+  .bio h1 {
+    font-size: 1.25rem;
+  }
+
+  .bio {
+    padding: 1rem;
+  }
+
+  /* Education & Job Cards */
+  .education-card,
+  .job {
     grid-template-columns: 0.8fr 1.2fr;
     padding: 0.75rem;
   }
 
-  .course-info, .job-info {
+  .course-info,
+  .job-info {
     font-size: 0.85rem;
   }
 
-  .school, .job-title {
+  .school,
+  .job-title {
     font-size: 1.1rem;
+  }
+
+  /* Tool Cards */
+  .tool-wrapper {
+    flex-direction: row-reverse;
+  }
+  #tools h1{
+    justify-content: center
+  }
+
+  .tool-type {
+    flex-direction: row-reverse;
+    width: 45%;
+    max-width: none;
+    padding: 2rem 1rem;
   }
 }
 
+@media (max-width: 480px) {
+  /* Project Card: 1 per row */
+  #projects{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 
+  .project-card {
+    width: 95%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+  }
+
+  /* Tool Cards */
+  .tool-type {
+    width: 50%;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Profile Section: stay in row and responsive */
+  .container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0.5rem;
+  
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 1rem;
+  }
+
+  .bio h1 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
 
 
