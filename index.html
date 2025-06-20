@@ -1,198 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Site</title>
 
-    <title>Resume site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header class="container"> 
-        <img src="/images/profile.jpeg" alt="Profile Picture" class="profile-pic">
-        <div class="bio">
-            <h1>Ayabonga Mtsotso</h1>
-            <p>I am a passionate Salesforce Admin transitioning into a Developer role, aiming to become a Solution Architect. I blend admin expertise with HTML, CSS, JavaScript, and growing development skills to build scalable solutions and improve user experiences.</p>
+  <header class="container">
+    <img src="/images/profile.jpeg" alt="Profile Picture" class="profile-pic" />
+    <div class="bio">
+      <h1>Ayabonga Mtsotso</h1>
+      <p>
+        I am a passionate Salesforce Admin transitioning into a Developer role, aiming to become a Solution Architect. I blend admin expertise with HTML, CSS, JavaScript, and growing development skills to build scalable solutions and improve user experiences.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Skills & Proficiency -->
+    <div class="skills-wrapper">
+      <section id="proficiency">
+        <h1>Proficiency</h1>
+        <p class="level">Beginner</p>
+        <p class="level">Intermediate</p>
+        <p class="level">Advanced*</p>
+        <ul>
+          <li>
+            <span>React</span>
+            <div class="bar"><div class="fill" id="react-fill"></div></div>
+          </li>
+          <li>
+            <span>HTML/CSS</span>
+            <div class="bar"><div class="fill" id="html-fill"></div></div>
+          </li>
+          <li>
+            <span>Node.js</span>
+            <div class="bar"><div class="fill" id="node-fill"></div></div>
+          </li>
+          <li>
+            <span>JavaScript</span>
+            <div class="bar"><div class="fill" id="js-fill"></div></div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+          <li>Software Development</li>
+          <li>Git & Version Control</li>
+          <li>Salesforce Administration</li>
+          <li>Web Development</li>
+          <li>Problem Solving</li>
+          <li>Communication</li>
+          <li>Team Collaboration</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h2>2023 <i class="fa fa-heart liked"></i></h2>
+          <h3>Project Title</h3>
+          <strong>Brief</strong><br />
+          <strong>Technologies:</strong><br />
+          <strong>Responsibilities:</strong>
         </div>
-    </header>
 
-    <main>  
-        <div class="skills-wrapper">
-            <section id="proficiency">      
-                <h1>Proficiency</h1>
-                <p class="level">Beginner</p>
-                <p class="level">Intermediate</p>
-                <p class="level">Advanced*</p>
-                <ul>
-                    <li>
-                        <span>React</span>
-                        <div class="bar">
-                            <div class="fill" id="react-fill">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>HTML/CSS</span>
-                        <div class="bar">
-                            <div class="fill" id="html-fill">
-                            </div>
-                        </div>
-                    </li>       
-                    <li>
-                        <span>Node.js</span>
-                        <div class="bar">
-                            <div class="fill" id="node-fill">
-                            </div>
-                        </div>
-                    </li>       
-
-                    <li>
-                        <span>JavaScript</span>
-                        <div class="bar">
-                            <div class="fill" id="js-fill">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="skills">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Software Development</li>
-                    <li>Git & Version control</li>
-                    <li>Salesforce Administration</li>
-                    <li>Web Development</li>
-                    <li>Problem Solving</li>
-                    <li>Communication</li>
-                    <li>Team Collaboration</li>
-                </ul>
-            </section>
+        <div class="project-card">
+          <h2>2023 <i class="fa fa-heart unliked"></i></h2>
+          <h3>Project Title</h3>
+          <strong>Brief</strong><br />
+          <strong>Technologies:</strong><br />
+          <strong>Responsibilities:</strong>
         </div>
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="projects-grid">
-                    <div class="project-card">
-                        <h2>2023<i class="fa fa-heart liked"></i></h2>
-                        <h3>Project Title</h3>
-                        <strong>Brief</strong><br>
-                        <strong>Technologies:</strong><br>
-                        <strong>Responsibilities:</strong>
-                    </div>
-                    <div class="project-card">
-                        <h2>2023<i class="fa fa-heart unliked"></i></h2>
-                        <h3>Project Title</h3>
-                        <strong>Brief</strong><br>
-                        <strong>Technologies:</strong><br>
-                        <strong>Responsibilities:</strong>
-                    </div>
-                <div class="project-card">
-                    <h2>2024<i class="fa fa-heart unliked"></i></h2>
-                    <h3>Project Title</h3>
-                    <strong>Brief</strong><br>
-                    <strong>Technologies:</strong><br>
-                    <strong>Responsibilities:</strong>
-                </div>
-                <div class="project-card">
-                    <h2>2025<i class="fa fa-heart liked"></i></h2>
-                    <h3>Project Title</h3>
-                    <strong>Brief....</strong><br>
-                    <strong>Technologies....</strong><br>
-                    <strong>Responsibilities....</strong>
-                </div>
-            </div>
-        </section>
+
+        <div class="project-card">
+          <h2>2024 <i class="fa fa-heart unliked"></i></h2>
+          <h3>Project Title</h3>
+          <strong>Brief</strong><br />
+          <strong>Technologies:</strong><br />
+          <strong>Responsibilities:</strong>
+        </div>
+
+        <div class="project-card">
+          <h2>2025 <i class="fa fa-heart liked"></i></h2>
+          <h3>Project Title</h3>
+          <strong>Brief...</strong><br />
+          <strong>Technologies...</strong><br />
+          <strong>Responsibilities...</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Tools -->
     <div class="edutools-wrapper">
-        <section id="education">
-            <h1>Education</h1>
-            <div class="education-card">
-                <p>2025 - 2026</p>
-                <h3>CodeSpace Academy</h3>
-                <p>Software Development (Part-time)</p>
-                <ul>
-                    <li>Focused on</li>
-                    <li>Collaborated</li>
-                    <li>Gained hands-on experience</li>
-                </ul>
-            </div>
-            <div class="education-card">
-                <p>2015 - 2020</p>
-                <h3>UCT</h3>
-                <p>B.Sc Honours in Geology</p>
-                <ul>
-                    <li>Focused on</li>
-                    <li>Collaborated</li>
-                    <li>Gained hands-on experience</li>
-                </ul>
-            </div>
-            <div class="education-card">
-                <p>2013 - 2015</p>
-                <h3>Hexagon High School</h3>
-                <p>Matric | NQF level 4</p>
-                <ul>
-                    <li>Focused on</li>
-                    <li>Collaborated</li>
-                    <li>Gained hands-on experience</li>
-                </ul>
-            </div>
-        </section>
-        <section id="tools"> 
-            <h1>Tools</h1>   
-            <div class="tool-type">
-                <div class="label">languages</div>
-                    <span><i class="devicon-javascript-plain colored"></i></span>
-                    <span><i class="devicon-html5-plain colored"></i></span>
-                    <span><i class="devicon-css3-plain colored"></i></span>
-                    <span><i class="devicon-nodejs-plain colored"></i></span>
-                    <span><i class="devicon-tailwindcss-plain colored"></i></span>
-                    <span><i class="devicon-react-plain colored"></i></span>
-                    <span><i class="devicon-salesforce-plain colored"></i></span>
-            </div>
-            <div class="tool-type">
-                <div class="label">design</div>
-                <span><i class="devicon-figma-plain colored"></i></span>
-                <span><i class="devicon-photoshop-plain colored"></i></span>
-                <span><i class="devicon-illustrator-plain colored"></i></span>
-            </div>
-            <div class="tool-type">
-                <div class="label">tools</div>
-                <span><i class="devicon-git-plain colored"></i></span>
-                <span><i class="devicon-github-original colored"></i></span>
-                <span><i class="devicon-gitlab-plain colored"></i></span>
-            </div>
-        </section>
-     </div>
-        <section id="experience">
-            <h1>Experience</h1>
-            <div class="job">
-                <h2>Job Title</h2>
-                <time datetime="2015-01">Mar 2025</time> - <time datetime="2020-01">Mar 2026</time>
-                <p>Company Name</p>
-                <ul>
-                    <li>Handled</li>
-                    <li>Advised</li>
-                    <li>Collaborated</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h2>Job Title</h2>
-                <time datetime="2015-01">Mar 2025</time> - <time datetime="2020-01">Mar 2026</time>
-                <p>Company Name</p>
-                <ul>
-                    <li>Handled</li>
-                    <li>Advised</li>
-                    <li>Collaborated</li>
-                </ul>
-     </div>
-        </section>
-    </main>
+      <section id="education">
+        <h1>Education</h1>
 
-    <footer id="contacts">
-        <h1>Let's Chat...</h1>
-        <p><a href="mailto:..">ayabonga.afika.mtsotso@gmail.com</a> | <a href="tel:+27713366560">071 336 6560</a> | <a href="https://www.linkedin.com/in/ayabongamtsotso1/">LinkedIn</a>| <a href="https://github.com/Afika-M">GitHub</a></p>
-    </footer>
+        <div class="education-card">
+          <div class="course-info">
+            <p class="duration">2024 – 2025</p>
+            <h2 class="school">CodeSpace Academy</h2>
+            <p class="course-title">Software Development | Full-time</p>
+          </div>
+          <ul class="tasks">
+            <li>Handled</li>
+            <li>Advised</li>
+            <li>Collaborated</li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <div class="course-info">
+            <p class="duration">2015 – 2020</p>
+            <h2 class="school">UCT</h2>
+            <p class="course-title">B.Sc Honours in Geology | Part-time</p>
+          </div>
+          <ul class="tasks">
+            <li>Managed</li>
+            <li>Improved</li>
+            <li>Coordinated</li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <div class="course-info">
+            <p class="duration">2013 – 2015</p>
+            <h2 class="school">Hexagon High School</h2>
+            <p class="course-title">Matric | NQF Level 4</p>
+          </div>
+          <ul class="tasks">
+            <li>Conducted</li>
+            <li>Analyzed</li>
+            <li>Presented</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="tools">
+        <h1>Tools</h1>
+        <div class="tool-type">
+          <div class="label">languages</div>
+          <span><i class="devicon-javascript-plain colored"></i></span>
+          <span><i class="devicon-html5-plain colored"></i></span>
+          <span><i class="devicon-css3-plain colored"></i></span>
+          <span><i class="devicon-nodejs-plain colored"></i></span>
+          <span><i class="devicon-tailwindcss-plain colored"></i></span>
+          <span><i class="devicon-react-plain colored"></i></span>
+          <span><i class="devicon-salesforce-plain colored"></i></span>
+        </div>
+
+        <div class="tool-type">
+          <div class="label">design</div>
+          <span><i class="devicon-figma-plain colored"></i></span>
+          <span><i class="devicon-photoshop-plain colored"></i></span>
+          <span><i class="devicon-illustrator-plain colored"></i></span>
+        </div>
+
+        <div class="tool-type">
+          <div class="label">tools</div>
+          <span><i class="devicon-git-plain colored"></i></span>
+          <span><i class="devicon-github-original colored"></i></span>
+          <span><i class="devicon-gitlab-plain colored"></i></span>
+        </div>
+      </section>
+    </div>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h1>Experience</h1>
+
+      <div class="job most-recent">
+        <div class="job-info">
+          <p class="job-dates">2025 – 2026</p>
+          <h2 class="job-title">Job Title</h2>
+          <p class="company-name">Company Name | Full-time</p>
+        </div>
+        <ul class="job-tasks">
+          <li>Handled</li>
+          <li>Advised</li>
+          <li>Collaborated</li>
+        </ul>
+        <span class="badge">Most Recent</span>
+      </div>
+
+      <div class="job">
+        <div class="job-info">
+          <p class="job-dates">2023 – 2024</p>
+          <h2 class="job-title">Job Title</h2>
+          <p class="company-name">Company Name | Part-time</p>
+        </div>
+        <ul class="job-tasks">
+          <li>Managed</li>
+          <li>Improved</li>
+          <li>Coordinated</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <h2>Let’s chat! I’m ready to work on exciting projects. </h2>
+    <p>
+      <a href="mailto:ayabonga.afika.mtsotso@gmail.com">ayabonga.afika.mtsotso@gmail.com</a> |
+      <a href="tel:+27713366560">071 336 6560</a> |
+      <a href="https://www.linkedin.com/in/ayabongamtsotso1/">LinkedIn</a> |
+      <a href="https://github.com/Afika-M">GitHub</a>
+    </p>
+  </footer>
 </body>
 </html>
