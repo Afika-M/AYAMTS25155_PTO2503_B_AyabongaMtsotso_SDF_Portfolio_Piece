@@ -39,8 +39,7 @@ A responsive, single-page resume website built with HTML, CSS, and Devicon to sh
 
 - Optimized for desktop, tablet, and mobile
 - On small screens:
-  - Project cards display in two columns
-  - Tool categories switch to horizontal layout
+  - Project cards display in one column
   - Education and Experience sections scale down but remain in a row
 
 ## 📷 Preview
