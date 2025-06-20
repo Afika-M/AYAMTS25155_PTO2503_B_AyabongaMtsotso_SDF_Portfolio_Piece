@@ -174,9 +174,8 @@ body {/*not required*/
 }
 
 #projects h1 {
-  font-size: 1.375rem;
+  font-size: 1rem;
   text-align: center;
-  padding-bottom: 1rem;
   color: #000000;
 }
 .project-card {
@@ -186,15 +185,14 @@ body {/*not required*/
   border-radius: 0.75rem;
   box-shadow: 0 0 0.125rem #DADADA;
   background-color: #ECF4F1;
-  font-size: 0.875rem;
   color: #000000;
   font-size: 0.875rem;
   margin: 1.875rem auto;
 }
 .project-card h3 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .project-card h2 {
   display: flex;
@@ -202,11 +200,11 @@ body {/*not required*/
   align-items: flex-start;
 }
 .project-card strong {
-  font-weight: regular;
   font-size: 0.875rem;
   color: #4A4A4A;
   line-height: 1.125rem;
 }
+
 .project-card:hover, .fa-heart:hover {
   color: #FFFFFF;
   background-color: #2E6E5B;
