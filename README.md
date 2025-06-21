@@ -45,7 +45,7 @@ A responsive, single-page resume website built with HTML, CSS, and Devicon to sh
 ## 📷 Preview
 
 ![Resume Screenshot](/images/snippet.png) 
-[![Watch the video]()
+[![Watch the video](https://www.loom.com/share/cfe65bec5865449790389dec613de09b?sid=34a984e9-a175-4efb-b51b-c3a706f534f9)
 
 
 ## 🧰 Getting Started
